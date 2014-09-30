@@ -36,7 +36,7 @@ public class Word extends Model {
 
     public String top = Integer.toString(topval)+"px";
 
-    public int size = (int)((Math.random() * 4) + 4);
+    public int size = (int)((Math.random() * 3) + 5);
 
     public String color = selectColor();
 
