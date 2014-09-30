@@ -1,0 +1,33 @@
+@(words:List[Word], wordForm: Form[Word])
+
+@import helper._
+
+@main {
+	<div class="page-header">
+		<h1>WhiteBoad</h1>
+	</div>
+
+	<div class="boad">
+		<p>
+			@for(word <- words){
+				@if(word.color == 0){
+					<font color="#@word.color" size="@word.size">@word.content</font>
+				} else {
+					@if(word.color==1) {
+						<font color="#@word.color" size="@word.size">@word.content/font>
+					} else {
+						<font color="#@word.color" size="@word.size">@word.content</font>
+					}
+				}
+			}
+		</p>
+	</div>
+	<br>
+	<div align="right">
+	<form action="@routes.Application.createWord()">
+		<input type="text" name="content" placeholder="縺薙％縺ｸ蜈･蜉�>
+		<input type="submit" class="btn btn-primary" value="譖ｸ縺崎ｾｼ繧�>
+	</form>
+	</div>
+
+}
