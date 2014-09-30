@@ -13,12 +13,16 @@ public class Word extends Model {
 
 	public String selectColor(){
 		String result = "";
-		for(int i=0; i<6; i++) {
-			int tmp = (int)(Math.random() * 16);
-			result += Integer.toHexString(tmp);
-		}
+		int tmp1 = (int)((Math.random() * 12));
+		int tmp2 = (int)(Math.random() * 16);
+		result += Integer.toHexString(tmp1);
+		result += Integer.toHexString(tmp2);
+		result = result+result+result;
 		return result;
 	}
+
+    public int leftval = (int)((Math.random() * 65 ) + 15);
+    public int topval = (int)((Math.random() * 350) + 250);
 
     private static final long serialVersionUID = 1L;
 
@@ -28,7 +32,9 @@ public class Word extends Model {
     @Constraints.Required
     public String content;
 
-    public int location = (int)(Math.random() * 10);
+    public String left = Integer.toString(leftval)+"%";
+
+    public String top = Integer.toString(topval)+"px";
 
     public int size = (int)((Math.random() * 4) + 4);
 

@@ -35,11 +35,11 @@ h2.point2:after {
 }
 
 .boad {
-    padding: 50px;
+	min-height: 500px;
+	max-height: 500px;
     background: #fff;
     border: 1px #ccc solid border-radius;
     box-shadow: 0 0 3px 0 #ddd;
     -moz-box-shadow: 0 0 3px 0 #ddd;
     -webkit-box-shadow: 0 0 3px 0 #ddd;
 }
-

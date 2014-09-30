@@ -7,12 +7,13 @@
 		<h1>WhiteBoad</h1>
 	</div>
 
-	<br><br><br>
 	<div class="boad">
 		<p>
-			@for(word <- words){
-				<font color="#@word.color" size="@word.size">@word.content</font>
-			}
+		@for(word <- words){
+			<font color="#@word.color" size="@word.size" style="position:absolute; left:@word.left;top:@word.top">
+				@word.content
+			</font>
+		}
 		</p>
 	</div>
 	<br>
