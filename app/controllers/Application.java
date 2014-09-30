@@ -36,4 +36,12 @@ public class Application extends Controller {
         wordForm.get().save();
         return GO_HOME;
     }
+
+    public static Result deleteAll() {
+    	List<Word> words = Word.findWord.all();
+    	for(Word word: words){
+    		word.delete();
+    	}
+    	return GO_HOME;
+    }
 }
