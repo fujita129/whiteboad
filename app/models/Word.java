@@ -32,7 +32,7 @@ public class Word extends Model {
     @Constraints.Required
     public String content;
 
-    public String left = Integer.toString(leftval)+"%";
+    public String lef = Integer.toString(leftval)+"%";
 
     public String top = Integer.toString(topval)+"px";
 
