@@ -4,8 +4,6 @@ import static play.data.Form.form;
 
 import java.util.List;
 
-import models.DayTarget;
-import models.UsrInfo;
 import models.Word;
 import play.*;
 import play.data.Form;
